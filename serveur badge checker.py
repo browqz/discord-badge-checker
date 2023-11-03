@@ -3,7 +3,7 @@ import discord
 intents = discord.Intents.default()
 intents.members = True
 
-TOKEN = 'MTEzMDkxNjc2MTY0Mjk5NTczMg.GC7E4T.MrBmoMFQ1m21OmfgzvfgX5l7kb0-Axlvs_kHmk'
+TOKEN = 'ton_token'
 
 client = discord.Client(intents=intents)
 
@@ -29,7 +29,7 @@ def get_badges(member):
 def bot_loop():
     @client.event
     async def on_ready():
-        guild_id = 1168506431964717126
+        guild_id = 00000000
 
         guild = client.get_guild(guild_id)
         if guild:
